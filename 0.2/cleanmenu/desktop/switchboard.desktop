@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=System Settings
+Name[de]=Systemeinstellungen
+Name[fr]=Paramètres système
+Comment=Switchboard
+Exec=switchboard
+Icon=preferences-desktop
+Terminal=false
+Categories=GNOME;GTK;System;
+Keywords=Center;Control;Panel;Preferences;System;

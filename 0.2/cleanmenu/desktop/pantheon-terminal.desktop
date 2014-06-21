@@ -1,0 +1,25 @@
+[Desktop Entry]
+Name=Terminal
+Comment=Pantheon Terminal
+TryExec=pantheon-terminal
+Exec=pantheon-terminal
+#Icon=/usr/share/pixmaps/Terminal.png
+Icon=Terminal
+Type=Application
+Categories=GTK;Utility;TerminalEmulator;System;
+StartupNotify=true
+X-GNOME-Gettext-Domain=pantheon-terminal
+Keywords=command;prompt;cmd;commandline;run;
+
+X-Ayatana-Desktop-Shortcuts=NewWindow;NewRootWindow
+
+[NewWindow Shortcut Group]
+Name=New Window
+Exec=pantheon-terminal
+TargetEnvironment=Unity
+
+[NewRootWindow Shortcut Group]
+Name=New Root Window
+Exec=gksu pantheon-terminal
+TargetEnvironment=Unity
+

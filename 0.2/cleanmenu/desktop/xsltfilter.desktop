@@ -1,0 +1,24 @@
+[Desktop Entry]
+Version=1.0
+Terminal=false
+Type=Application
+Exec=libreoffice %U
+MimeType=application/vnd.oasis.opendocument.text-flat-xml;application/vnd.oasis.opendocument.spreadsheet-flat-xml;application/vnd.oasis.opendocument.graphics-flat-xml;application/vnd.oasis.opendocument.presentation-flat-xml;
+Name=LibreOffice XSLT based filters
+GenericName=XSLT based filters
+GenericName[it]=Filtri basati su XSLT
+GenericName[es]=Filtros basados en XSLT
+GenericName[zh_CN]=基于 XSLT 的过滤器
+GenericName[ru]=Фильтры XSLT
+GenericName[nl]=Filters gebaseerd op XSLT
+GenericName[ar]=مرشحات القائمة على XSLT
+GenericName[en]=XSLT based filters
+GenericName[fr]=Filtres basés sur XSLT
+GenericName[de]=XSLT basierte Filter
+GenericName[ja]=XSLT ベースのフィルター
+GenericName[cs]=Filtry používající XSLT
+GenericName[pt_BR]=Filtros baseados em XSLT
+NoDisplay=true
+StartupNotify=true
+X-GIO-NoFuse=true
+X-KDE-Protocols=file,http,smb,ftp,webdav

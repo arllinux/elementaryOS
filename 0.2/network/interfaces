@@ -1,0 +1,10 @@
+# /etc/network/interfaces
+
+# lo
+auto lo
+iface lo inet loopback
+
+# eth0
+auto eth0
+iface eth0 inet dhcp
+

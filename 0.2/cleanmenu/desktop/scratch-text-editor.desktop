@@ -1,0 +1,27 @@
+[Desktop Entry]
+Type=Application
+Name=Text editor
+Name[de]=Texteditor
+Name[fr]=Éditeur de texte simple
+Comment=Scratch
+GenericName=Text Editor
+Exec=scratch-text-editor %U
+Icon=accessories-text-editor
+Terminal=false
+Categories=GNOME;GTK;Utility;TextEditor;
+Keywords=Notepad;IDE;Plain
+MimeType=text/plain;
+StartupNotify=true
+
+X-Ayatana-Desktop-Shortcuts=NewWindow;NewDocument
+
+[NewDocument Shortcut Group]
+Name=New Document
+Exec=scratch-text-editor --new-tab
+TargetEnvironment=Unity
+
+[NewWindow Shortcut Group]
+Name=New Window
+Exec=scratch-text-editor -n
+TargetEnvironment=Unity
+

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Scanner Tool
+Name[de]=Scannersoftware
+Name[fr]=Acquisition d'images
+Comment=Simple Scan
+Exec=simple-scan
+Icon=scanner
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=GNOME;GTK;Graphics;Scanning;

@@ -1,0 +1,24 @@
+[Desktop Entry]
+Name=File Manager
+Name[de]=Dateimanager
+Name[fr]=Gestionnaire de fichiers
+Comment=Nautilus
+#Exec=nautilus %U
+Exec=nautilus --no-desktop
+Icon=system-file-manager
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=GNOME;GTK;Utility;Core;
+MimeType=inode/directory;application/x-gnome-saved-search;
+X-GNOME-Bugzilla-Bugzilla=GNOME
+X-GNOME-Bugzilla-Product=nautilus
+X-GNOME-Bugzilla-Component=general
+X-GNOME-Bugzilla-Version=3.4.2
+Actions=Window;
+X-Ubuntu-Gettext-Domain=nautilus
+
+[Desktop Action Window]
+Name=Open a New Window
+Exec=nautilus
+OnlyShowIn=Unity;

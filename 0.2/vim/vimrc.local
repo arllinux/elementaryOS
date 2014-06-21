@@ -1,0 +1,28 @@
+" Fichier vimrc.local
+
+set background=dark
+set textwidth=79
+set scrolloff=15
+set autoindent
+set tabstop=2
+set modeline modelines=1
+"
+" Revenir à la dernière ligne éditée lorsqu'on ouvre un fichier
+if has("autocmd")
+  au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+endif
+
+" Règles d'indentation
+if has("autocmd")
+  filetype plugin indent on
+endif
+
+"[Ctrl-N] remplace l'espace sous le curseur par un espace insécable
+:map <C-N> s&nbsp;<ESC>
+
+"[Ctrl-I] ajoute une paire de balises <em></em> autour du mot sélectionné
+:vmap <C-I> "zdi<em><C-R>z</em><ESC>
+
+"[Ctrl-B] ajoute une paire de balises <strong></strong> autour du mot sélectionné
+:vmap <C-B> "zdi<strong><C-R>z</strong><ESC>
+

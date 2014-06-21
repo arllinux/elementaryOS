@@ -1,0 +1,23 @@
+# user_install
+VERT='\[\033[0;32m\]'
+BLANC='\[\033[1;37m\]'
+NC='\[\033[0m\]'
+PS1="$VERT[$BLANC\u$NC@$BLANC\h$NC:$BLANC\W$VERT] \$ $NC"
+
+# Vim est l'éditeur par défaut
+EDITOR=vim
+VISUAL=$EDITOR
+export EDITOR VISUAL
+
+# `ls' en couleurs :
+export LS_OPTIONS='--color=auto'
+eval "`dircolors`"
+alias ls='ls $LS_OPTIONS'
+alias ll='ls $LS_OPTIONS -lh'
+alias la='ls $LS_OPTIONS -la'
+alias ..='cd ..'
+alias ...='cd ../..'
+alias cp='cp -i'
+alias rm='rm -i'
+alias mv='mv -i'
+alias vi='vim'

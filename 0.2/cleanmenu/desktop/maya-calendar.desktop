@@ -1,0 +1,22 @@
+[Desktop Entry]
+Type=Application
+Name=Calendar
+Name[de]=Kalender
+Name[fr]=Calendrier
+Comment=Maya
+Exec=maya-calendar
+Icon=office-calendar
+Terminal=false
+Categories=GTK;Office;Calendar;
+StartupNotify=true
+MimeType=text/calendar;
+X-GNOME-Gettext-Domain=maya
+X-GNOME-Keywords=Maya;Planner;Dates;Days;Events;
+X-AppInstall-Keywords=Maya;Planner;Dates;Days;Events;
+
+X-Ayatana-Desktop-Shortcuts=AddEvent
+
+[AddEvent Shortcut Group]
+Name=_Add Event
+Exec=maya-calendar -a
+TargetEnvironment=Unity

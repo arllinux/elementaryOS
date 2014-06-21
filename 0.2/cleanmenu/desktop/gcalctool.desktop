@@ -1,0 +1,17 @@
+[Desktop Entry]
+Name=Calculator
+Name[de]=Taschenrechner
+Name[fr]=Calculatrice
+Comment=Gcalctool
+Exec=gcalctool
+Icon=accessories-calculator
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=GNOME;GTK;Utility;Calculator;
+X-GNOME-DocPath=gcalctool/gcalctool.xml
+X-GNOME-Bugzilla-Bugzilla=GNOME
+X-GNOME-Bugzilla-Product=gcalctool
+X-GNOME-Bugzilla-Component=general
+X-GNOME-Bugzilla-OtherBinaries=gnome-calculator
+X-Ubuntu-Gettext-Domain=gcalctool
