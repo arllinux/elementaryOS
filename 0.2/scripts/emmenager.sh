@@ -7,14 +7,6 @@
 
 CWD=$(pwd)
 
-# Création du mot de passe administrateur
-echo ":: Création du mot de passe administrateur. ::"
-sudo passwd root
-
-# Connection en administrateur
-echo ":: Connection en administrateur.(su -) ::"
-su -
-
 # Vérification de la syntaxe de l'utilisateur principal
 [ $USER != "root" ]
 if [ $? = "0" ]
@@ -64,11 +56,6 @@ wget http://sloteur.free.fr/wal/fonds_arllinux.tar.gz
 tar xvzf fonds_arllinux.tar.gz
 rm fonds_arllinux.tar.gz
 chmod 0644 /usr/share/backgrounds/*.jpg
-
-echo ":: Installation des fonds d'écran supplémentaires."
-if [ -d /usr/share/backgrounds ]; then
-	cp -f $CWD/../backgrounds/* /usr/share/backgrounds/
-fi
 
 # Ranger les icônes à leur place
 echo ":: Installation des icônes supplémentaires."
@@ -136,6 +123,7 @@ fc-cache -f -v
 cd -
 
 su - nom
+cp -v /etc/skel/.bash* .
 source ~/.bashrc
 
 echo ":: Réglages de base terminés - Redémarrage obligatoire ::"

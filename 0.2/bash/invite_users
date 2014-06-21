@@ -1,23 +1,19 @@
 # user_install
-VERT='\[\033[0;32m\]'
+MARRON='\[\033[0;33m\]'
+JAUNE='\[\033[1;33m\]'
 BLANC='\[\033[1;37m\]'
 NC='\[\033[0m\]'
-PS1="$VERT[$BLANC\u$NC@$BLANC\h$NC:$BLANC\W$VERT] \$ $NC"
+PS1="$MARRON[$JAUNE\u$NC@$JAUNE\h$NC:$BLANC\w$MARRON] $BLANC\$ $NC"
 
-# Vim est l'éditeur par défaut
+# # Vim est l'éditeur par défaut
 EDITOR=vim
 VISUAL=$EDITOR
 export EDITOR VISUAL
 
-# `ls' en couleurs :
+# # `ls' en couleurs :
 export LS_OPTIONS='--color=auto'
 eval "`dircolors`"
 alias ls='ls $LS_OPTIONS'
 alias ll='ls $LS_OPTIONS -lh'
 alias la='ls $LS_OPTIONS -la'
-alias ..='cd ..'
-alias ...='cd ../..'
-alias cp='cp -i'
-alias rm='rm -i'
-alias mv='mv -i'
-alias vi='vim'
+
