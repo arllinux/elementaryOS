@@ -71,25 +71,6 @@ if [ -h /etc/fonts/conf.d/70-no-bitmaps.conf ]; then
 	dpkg-reconfigure fontconfig
 fi
 
-# Configurer APT
-echo ":: Configuration des dépôts de base pour APT."
-cat $CWD/../apt/sources.list > /etc/apt/sources.list
-chmod 0644 /etc/apt/sources.list
-
-REPOSITORIES="elementary-update libreoffice webupd8 gimp"
-
-echo ":: Configuration des dépôts supplémentaires pour APT."
-for REPOSITORY in $REPOSITORIES; do
-  cat $CWD/../apt/$REPOSITORY.list > /etc/apt/sources.list.d/$REPOSITORY.list
-  chmod 0644 /etc/apt/sources.list.d/$REPOSITORY.list
-done
-
-GPGKEYS="FD316B5D 4C9D234C 1378B444 614C4B38 B9BA26FA"
-
-for GPGKEY in $GPGKEYS; do
-  apt-key adv --keyserver keyserver.ubuntu.com --recv-keys $GPGKEY
-done
-
 # Recharger les informations et mettre à jour
 apt-get update
 apt-get -y dist-upgrade
